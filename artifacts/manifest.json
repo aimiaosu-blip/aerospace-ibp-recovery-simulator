@@ -1,0 +1,42 @@
+{
+  "config": {
+    "capacity_loss": 0.4,
+    "demand_uplift": 0.15,
+    "disruption_duration": 4,
+    "disruption_week": 10,
+    "expedite_unit_cost": 18000.0,
+    "lookahead": 2,
+    "resequence_unit_cost": 6000.0,
+    "secondary_unit_cost": 26000.0,
+    "seed": 42,
+    "weeks": 26
+  },
+  "sha256": {
+    "csv/aircraft_bom.csv": "e893b4d59038670303a474d23b7ee8300013a714a24b4bed3c4f3d55fcc71831",
+    "csv/capacity_execution.csv": "ae530eca48cdfef5e5fe1c274153215ae978d472aabf0d3002335211ae76cca6",
+    "csv/component_risk_rank.csv": "4ee9efb7a0398d9c7c3327c2de61a9c295d7938a7b61949648f39ccbc3fcbac2",
+    "csv/components.csv": "71977fcb4a09c38faca64f40739d67cc5238a2ee39377317dd13085fe5130cf5",
+    "csv/constraint_exceptions.csv": "e3b2bdb4989a73dc1bf89813c5dc47dac2562e22b933a0765dce0e64fdd87e46",
+    "csv/customer_orders.csv": "4f097b4bb8d1f82e5c08e4a2368dfaa199fb2eb35edbc84cb6888557b9bd3f27",
+    "csv/demand_forecast.csv": "50dd965747e8bbce7e83bf4b8bd95c68ae0e2e2d95bc11784a8b96486bbdb1db",
+    "csv/dim_release_week.csv": "b034f615a5f8ba5773b16976acde53859648ce7ada0efd1b9e0e7cec356ae976",
+    "csv/dim_scenario.csv": "9f5739fa50349e08cf961ef4b86105e465562bf28be05067672ec28d87e4ba1f",
+    "csv/dim_week.csv": "e45dbf6a3837cb4eaf73f9f6647d52cdeceed72185732a4bbbb8287f039b3caa",
+    "csv/forecast_accuracy.csv": "d446fcbc7d145c2e9fd851d7b5b038cf0df055dbadabdbeaae79213e415f1490",
+    "csv/inventory.csv": "b78621f81726f7310de039b4519b3720f5e1cc0b061e78d10955df7dbbd64bd4",
+    "csv/material_balance.csv": "125e69f0d84053264ea64896a4bce326abbe07ea293b5dc08aa5382b527bc0d0",
+    "csv/order_fulfillment.csv": "53f2fedc7cd65809c6f7235bbe77459ec1838a751f6531556858544532682cbc",
+    "csv/order_risk.csv": "bf1c3e4ef492bc52e70816624d00f5a9700e4fc87ce1b445781839e6e7afae1b",
+    "csv/planning_exceptions.csv": "3f6d5dab01f28524e092199ed900c1e8cc65d5f1889477eff40d52efcee04604",
+    "csv/production_capacity.csv": "aac87d45d6982c46b1d9c021a3371c30df53552d6ccadf6e1bb4e06a4acfefd6",
+    "csv/production_plan.csv": "14d6f84dbd1f4c95094690514e6d410de62e33125adadfda02c2db1f358a6a56",
+    "csv/products.csv": "156507b1c7e30689756f9c254c15b0bf825bbc1db2c1bb3ae202604fc2638255",
+    "csv/scenario_evaluation.csv": "34b195c8c321718f4d4c3cde870e620a74185e1d61c393ab1d53b26b5c6709ad",
+    "csv/scenario_metrics.csv": "ae5032e5b85c0a2dca1c6322240bd4c7aca063bc6ef373bf7a30525130ef2963",
+    "csv/supplier_release_load.csv": "f5eb9085d635baed1f2da5926028bc3a6d05ae135cfdb7a053d309aa47ed5ee4",
+    "csv/suppliers.csv": "a4f99543f9e8e72ad6acce43ec90d036b1973220776bcee5a245c1de41a131b0",
+    "csv/supply_shipments.csv": "f7fd097f62395a2c3f65f6ca3812d02034a6c3abd8f68a9ff8e8c1177d7b3430",
+    "csv/transportation.csv": "5362c09dba389f3e327b78784d445ce95cdccb34d4937b0cf08f9e88ee277420",
+    "csv/weekly_kpi.csv": "c87b28f9cd7705c433da3d227cf85f0a266e4805574c26d4dd2f3804956712ba"
+  }
+}

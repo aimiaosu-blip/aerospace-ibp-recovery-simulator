@@ -1,0 +1,2 @@
+# No third-party runtime or test dependencies.
+# Python >=3.9 with its bundled sqlite3, csv, random, statistics and unittest modules.

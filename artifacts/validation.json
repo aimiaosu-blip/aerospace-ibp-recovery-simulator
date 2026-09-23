@@ -1,0 +1,92 @@
+{
+  "-1": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  },
+  "0": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  },
+  "1": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  },
+  "2": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  },
+  "3": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  },
+  "4": {
+    "checks": [
+      "supplier_capacity",
+      "transport_capacity",
+      "lead_times",
+      "inventory_conservation",
+      "nonnegative_inventory",
+      "fal_capacity",
+      "unique_fulfillment",
+      "backlog_conservation",
+      "order_knowledge",
+      "frozen_history"
+    ],
+    "status": "passed"
+  }
+}

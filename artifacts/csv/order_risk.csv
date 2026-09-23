@@ -1,0 +1,740 @@
+scenario,order_id,product,due_week,delivery_week,priority,delay_weeks,status,review_sequence
+0,O00406,AP-300,24,,1,2,Open at horizon,1
+0,X24-01,AP-100,24,,1,2,Open at horizon,2
+0,X24-02,AP-100,24,,1,2,Open at horizon,3
+0,O00407,AP-100,25,,1,1,Open at horizon,4
+0,O00410,AP-100,25,,1,1,Open at horizon,5
+0,O00423,AP-300,25,,1,1,Open at horizon,6
+0,X25-01,AP-100,25,,1,1,Open at horizon,7
+0,X25-02,AP-100,25,,1,1,Open at horizon,8
+0,O00426,AP-100,26,,1,0,Open at horizon,9
+0,O00430,AP-100,26,,1,0,Open at horizon,10
+0,O00431,AP-100,26,,1,0,Open at horizon,11
+0,O00435,AP-100,26,,1,0,Open at horizon,12
+0,O00436,AP-100,26,,1,0,Open at horizon,13
+0,O00438,AP-200,26,,1,0,Open at horizon,14
+0,X26-01,AP-100,26,,1,0,Open at horizon,15
+0,O00405,AP-300,24,,2,2,Open at horizon,16
+0,O00409,AP-100,25,,2,1,Open at horizon,17
+0,O00411,AP-100,25,,2,1,Open at horizon,18
+0,O00412,AP-100,25,,2,1,Open at horizon,19
+0,O00413,AP-100,25,,2,1,Open at horizon,20
+0,O00414,AP-100,25,,2,1,Open at horizon,21
+0,O00415,AP-100,25,,2,1,Open at horizon,22
+0,O00417,AP-100,25,,2,1,Open at horizon,23
+0,O00418,AP-100,25,,2,1,Open at horizon,24
+0,O00419,AP-200,25,,2,1,Open at horizon,25
+0,O00420,AP-200,25,,2,1,Open at horizon,26
+0,O00421,AP-200,25,,2,1,Open at horizon,27
+0,O00424,AP-300,25,,2,1,Open at horizon,28
+0,O00427,AP-100,26,,2,0,Open at horizon,29
+0,O00428,AP-100,26,,2,0,Open at horizon,30
+0,O00429,AP-100,26,,2,0,Open at horizon,31
+0,O00432,AP-100,26,,2,0,Open at horizon,32
+0,O00437,AP-200,26,,2,0,Open at horizon,33
+0,O00439,AP-200,26,,2,0,Open at horizon,34
+0,O00440,AP-200,26,,2,0,Open at horizon,35
+0,O00441,AP-300,26,,2,0,Open at horizon,36
+0,O00442,AP-300,26,,2,0,Open at horizon,37
+0,O00408,AP-100,25,,3,1,Open at horizon,38
+0,O00416,AP-100,25,,3,1,Open at horizon,39
+0,O00422,AP-200,25,,3,1,Open at horizon,40
+0,O00425,AP-100,26,,3,0,Open at horizon,41
+0,O00433,AP-100,26,,3,0,Open at horizon,42
+0,O00434,AP-100,26,,3,0,Open at horizon,43
+0,X14-02,AP-100,14,15,1,1,Delivered late,44
+0,X15-01,AP-100,15,16,1,1,Delivered late,45
+0,X15-02,AP-100,15,16,1,1,Delivered late,46
+0,O00248,AP-100,16,17,1,1,Delivered late,47
+0,O00249,AP-100,16,17,1,1,Delivered late,48
+0,O00258,AP-200,16,17,1,1,Delivered late,49
+0,O00261,AP-300,16,18,1,2,Delivered late,50
+0,X16-01,AP-100,16,18,1,2,Delivered late,51
+0,O00269,AP-100,17,18,1,1,Delivered late,52
+0,O00270,AP-100,17,18,1,1,Delivered late,53
+0,O00274,AP-100,17,19,1,2,Delivered late,54
+0,O00276,AP-200,17,19,1,2,Delivered late,55
+0,X17-01,AP-100,17,19,1,2,Delivered late,56
+0,X17-02,AP-100,17,19,1,2,Delivered late,57
+0,O00281,AP-100,18,19,1,1,Delivered late,58
+0,O00287,AP-100,18,20,1,2,Delivered late,59
+0,O00293,AP-200,18,20,1,2,Delivered late,60
+0,X18-01,AP-100,18,20,1,2,Delivered late,61
+0,X18-02,AP-100,18,20,1,2,Delivered late,62
+0,O00314,AP-200,19,21,1,2,Delivered late,63
+0,O00316,AP-300,19,21,1,2,Delivered late,64
+0,X19-01,AP-100,19,21,1,2,Delivered late,65
+0,X19-02,AP-100,19,21,1,2,Delivered late,66
+0,O00323,AP-100,20,22,1,2,Delivered late,67
+0,O00327,AP-100,20,22,1,2,Delivered late,68
+0,O00329,AP-200,20,22,1,2,Delivered late,69
+0,X20-01,AP-100,20,22,1,2,Delivered late,70
+0,X20-02,AP-100,20,22,1,2,Delivered late,71
+0,O00340,AP-100,21,23,1,2,Delivered late,72
+0,O00343,AP-100,21,23,1,2,Delivered late,73
+0,O00346,AP-100,21,23,1,2,Delivered late,74
+0,O00349,AP-200,21,23,1,2,Delivered late,75
+0,O00352,AP-300,21,23,1,2,Delivered late,76
+0,X21-01,AP-100,21,23,1,2,Delivered late,77
+0,O00355,AP-100,22,24,1,2,Delivered late,78
+0,O00356,AP-100,22,24,1,2,Delivered late,79
+0,O00360,AP-100,22,24,1,2,Delivered late,80
+0,O00363,AP-100,22,24,1,2,Delivered late,81
+0,O00370,AP-300,22,24,1,2,Delivered late,82
+0,X22-01,AP-100,22,25,1,3,Delivered late,83
+0,X22-02,AP-100,22,25,1,3,Delivered late,84
+0,O00376,AP-100,23,25,1,2,Delivered late,85
+0,O00380,AP-100,23,25,1,2,Delivered late,86
+0,O00382,AP-100,23,25,1,2,Delivered late,87
+0,O00385,AP-200,23,25,1,2,Delivered late,88
+0,X23-01,AP-100,23,26,1,3,Delivered late,89
+0,X23-02,AP-100,23,26,1,3,Delivered late,90
+0,O00391,AP-100,24,26,1,2,Delivered late,91
+0,O00397,AP-100,24,26,1,2,Delivered late,92
+0,O00403,AP-200,24,26,1,2,Delivered late,93
+0,O00238,AP-100,15,16,2,1,Delivered late,94
+0,O00240,AP-200,15,16,2,1,Delivered late,95
+0,O00242,AP-200,15,16,2,1,Delivered late,96
+0,O00244,AP-300,15,16,2,1,Delivered late,97
+0,O00250,AP-100,16,17,2,1,Delivered late,98
+0,O00251,AP-100,16,17,2,1,Delivered late,99
+0,O00253,AP-100,16,17,2,1,Delivered late,100
+0,O00254,AP-100,16,17,2,1,Delivered late,101
+0,O00255,AP-100,16,17,2,1,Delivered late,102
+0,O00257,AP-200,16,17,2,1,Delivered late,103
+0,O00259,AP-200,16,17,2,1,Delivered late,104
+0,O00260,AP-200,16,18,2,2,Delivered late,105
+0,O00262,AP-300,16,18,2,2,Delivered late,106
+0,O00266,AP-100,17,18,2,1,Delivered late,107
+0,O00268,AP-100,17,18,2,1,Delivered late,108
+0,O00271,AP-100,17,19,2,2,Delivered late,109
+0,O00272,AP-100,17,19,2,2,Delivered late,110
+0,O00273,AP-100,17,19,2,2,Delivered late,111
+0,O00277,AP-200,17,19,2,2,Delivered late,112
+0,O00278,AP-200,17,19,2,2,Delivered late,113
+0,O00279,AP-300,17,19,2,2,Delivered late,114
+0,O00280,AP-300,17,19,2,2,Delivered late,115
+0,O00283,AP-100,18,19,2,1,Delivered late,116
+0,O00285,AP-100,18,19,2,1,Delivered late,117
+0,O00286,AP-100,18,19,2,1,Delivered late,118
+0,O00288,AP-100,18,20,2,2,Delivered late,119
+0,O00289,AP-100,18,20,2,2,Delivered late,120
+0,O00292,AP-100,18,20,2,2,Delivered late,121
+0,O00294,AP-200,18,20,2,2,Delivered late,122
+0,O00295,AP-200,18,20,2,2,Delivered late,123
+0,O00296,AP-200,18,20,2,2,Delivered late,124
+0,O00297,AP-300,18,20,2,2,Delivered late,125
+0,O00300,AP-100,19,20,2,1,Delivered late,126
+0,O00303,AP-100,19,20,2,1,Delivered late,127
+0,O00304,AP-100,19,21,2,2,Delivered late,128
+0,O00307,AP-100,19,21,2,2,Delivered late,129
+0,O00308,AP-100,19,21,2,2,Delivered late,130
+0,O00309,AP-100,19,21,2,2,Delivered late,131
+0,O00311,AP-200,19,21,2,2,Delivered late,132
+0,O00313,AP-200,19,21,2,2,Delivered late,133
+0,O00317,AP-100,20,21,2,1,Delivered late,134
+0,O00318,AP-100,20,21,2,1,Delivered late,135
+0,O00320,AP-100,20,22,2,2,Delivered late,136
+0,O00322,AP-100,20,22,2,2,Delivered late,137
+0,O00325,AP-100,20,22,2,2,Delivered late,138
+0,O00326,AP-100,20,22,2,2,Delivered late,139
+0,O00331,AP-200,20,22,2,2,Delivered late,140
+0,O00332,AP-200,20,22,2,2,Delivered late,141
+0,O00333,AP-300,20,22,2,2,Delivered late,142
+0,O00334,AP-300,20,22,2,2,Delivered late,143
+0,O00336,AP-100,21,23,2,2,Delivered late,144
+0,O00337,AP-100,21,23,2,2,Delivered late,145
+0,O00339,AP-100,21,23,2,2,Delivered late,146
+0,O00341,AP-100,21,23,2,2,Delivered late,147
+0,O00344,AP-100,21,23,2,2,Delivered late,148
+0,O00345,AP-100,21,23,2,2,Delivered late,149
+0,O00348,AP-200,21,23,2,2,Delivered late,150
+0,O00350,AP-200,21,23,2,2,Delivered late,151
+0,O00351,AP-300,21,23,2,2,Delivered late,152
+0,O00353,AP-100,22,24,2,2,Delivered late,153
+0,O00359,AP-100,22,24,2,2,Delivered late,154
+0,O00362,AP-100,22,24,2,2,Delivered late,155
+0,O00364,AP-100,22,24,2,2,Delivered late,156
+0,O00365,AP-200,22,24,2,2,Delivered late,157
+0,O00368,AP-200,22,24,2,2,Delivered late,158
+0,O00371,AP-100,23,25,2,2,Delivered late,159
+0,O00372,AP-100,23,25,2,2,Delivered late,160
+0,O00373,AP-100,23,25,2,2,Delivered late,161
+0,O00374,AP-100,23,25,2,2,Delivered late,162
+0,O00375,AP-100,23,25,2,2,Delivered late,163
+0,O00377,AP-100,23,25,2,2,Delivered late,164
+0,O00378,AP-100,23,25,2,2,Delivered late,165
+0,O00381,AP-100,23,25,2,2,Delivered late,166
+0,O00384,AP-200,23,25,2,2,Delivered late,167
+0,O00386,AP-200,23,25,2,2,Delivered late,168
+0,O00389,AP-100,24,26,2,2,Delivered late,169
+0,O00390,AP-100,24,26,2,2,Delivered late,170
+0,O00392,AP-100,24,26,2,2,Delivered late,171
+0,O00393,AP-100,24,26,2,2,Delivered late,172
+0,O00394,AP-100,24,26,2,2,Delivered late,173
+0,O00395,AP-100,24,26,2,2,Delivered late,174
+0,O00396,AP-100,24,26,2,2,Delivered late,175
+0,O00398,AP-100,24,26,2,2,Delivered late,176
+0,O00239,AP-200,15,16,3,1,Delivered late,177
+0,O00241,AP-200,15,16,3,1,Delivered late,178
+0,O00243,AP-300,15,16,3,1,Delivered late,179
+0,O00252,AP-100,16,17,3,1,Delivered late,180
+0,O00256,AP-100,16,17,3,1,Delivered late,181
+0,O00263,AP-100,17,18,3,1,Delivered late,182
+0,O00264,AP-100,17,18,3,1,Delivered late,183
+0,O00265,AP-100,17,18,3,1,Delivered late,184
+0,O00267,AP-100,17,18,3,1,Delivered late,185
+0,O00275,AP-200,17,19,3,2,Delivered late,186
+0,O00282,AP-100,18,19,3,1,Delivered late,187
+0,O00284,AP-100,18,19,3,1,Delivered late,188
+0,O00290,AP-100,18,20,3,2,Delivered late,189
+0,O00291,AP-100,18,20,3,2,Delivered late,190
+0,O00298,AP-300,18,20,3,2,Delivered late,191
+0,O00299,AP-100,19,20,3,1,Delivered late,192
+0,O00301,AP-100,19,20,3,1,Delivered late,193
+0,O00302,AP-100,19,20,3,1,Delivered late,194
+0,O00305,AP-100,19,21,3,2,Delivered late,195
+0,O00306,AP-100,19,21,3,2,Delivered late,196
+0,O00310,AP-100,19,21,3,2,Delivered late,197
+0,O00312,AP-200,19,21,3,2,Delivered late,198
+0,O00315,AP-300,19,21,3,2,Delivered late,199
+0,O00319,AP-100,20,21,3,1,Delivered late,200
+0,O00321,AP-100,20,22,3,2,Delivered late,201
+0,O00324,AP-100,20,22,3,2,Delivered late,202
+0,O00328,AP-100,20,22,3,2,Delivered late,203
+0,O00330,AP-200,20,22,3,2,Delivered late,204
+0,O00335,AP-100,21,22,3,1,Delivered late,205
+0,O00338,AP-100,21,23,3,2,Delivered late,206
+0,O00342,AP-100,21,23,3,2,Delivered late,207
+0,O00347,AP-200,21,23,3,2,Delivered late,208
+0,O00354,AP-100,22,24,3,2,Delivered late,209
+0,O00357,AP-100,22,24,3,2,Delivered late,210
+0,O00358,AP-100,22,24,3,2,Delivered late,211
+0,O00361,AP-100,22,24,3,2,Delivered late,212
+0,O00366,AP-200,22,24,3,2,Delivered late,213
+0,O00367,AP-200,22,24,3,2,Delivered late,214
+0,O00369,AP-300,22,24,3,2,Delivered late,215
+0,O00379,AP-100,23,25,3,2,Delivered late,216
+0,O00383,AP-200,23,25,3,2,Delivered late,217
+0,O00387,AP-300,23,25,3,2,Delivered late,218
+0,O00388,AP-300,23,26,3,3,Delivered late,219
+0,O00399,AP-100,24,26,3,2,Delivered late,220
+0,O00400,AP-100,24,26,3,2,Delivered late,221
+0,O00401,AP-200,24,26,3,2,Delivered late,222
+0,O00402,AP-200,24,26,3,2,Delivered late,223
+0,O00404,AP-200,24,26,3,2,Delivered late,224
+1,O00406,AP-300,24,,1,2,Open at horizon,1
+1,X24-01,AP-100,24,,1,2,Open at horizon,2
+1,X24-02,AP-100,24,,1,2,Open at horizon,3
+1,O00407,AP-100,25,,1,1,Open at horizon,4
+1,O00410,AP-100,25,,1,1,Open at horizon,5
+1,O00423,AP-300,25,,1,1,Open at horizon,6
+1,X25-01,AP-100,25,,1,1,Open at horizon,7
+1,X25-02,AP-100,25,,1,1,Open at horizon,8
+1,O00426,AP-100,26,,1,0,Open at horizon,9
+1,O00430,AP-100,26,,1,0,Open at horizon,10
+1,O00431,AP-100,26,,1,0,Open at horizon,11
+1,O00435,AP-100,26,,1,0,Open at horizon,12
+1,O00436,AP-100,26,,1,0,Open at horizon,13
+1,O00438,AP-200,26,,1,0,Open at horizon,14
+1,X26-01,AP-100,26,,1,0,Open at horizon,15
+1,O00405,AP-300,24,,2,2,Open at horizon,16
+1,O00409,AP-100,25,,2,1,Open at horizon,17
+1,O00411,AP-100,25,,2,1,Open at horizon,18
+1,O00412,AP-100,25,,2,1,Open at horizon,19
+1,O00413,AP-100,25,,2,1,Open at horizon,20
+1,O00414,AP-100,25,,2,1,Open at horizon,21
+1,O00415,AP-100,25,,2,1,Open at horizon,22
+1,O00417,AP-100,25,,2,1,Open at horizon,23
+1,O00418,AP-100,25,,2,1,Open at horizon,24
+1,O00419,AP-200,25,,2,1,Open at horizon,25
+1,O00420,AP-200,25,,2,1,Open at horizon,26
+1,O00421,AP-200,25,,2,1,Open at horizon,27
+1,O00424,AP-300,25,,2,1,Open at horizon,28
+1,O00427,AP-100,26,,2,0,Open at horizon,29
+1,O00428,AP-100,26,,2,0,Open at horizon,30
+1,O00429,AP-100,26,,2,0,Open at horizon,31
+1,O00432,AP-100,26,,2,0,Open at horizon,32
+1,O00437,AP-200,26,,2,0,Open at horizon,33
+1,O00439,AP-200,26,,2,0,Open at horizon,34
+1,O00440,AP-200,26,,2,0,Open at horizon,35
+1,O00441,AP-300,26,,2,0,Open at horizon,36
+1,O00442,AP-300,26,,2,0,Open at horizon,37
+1,O00408,AP-100,25,,3,1,Open at horizon,38
+1,O00416,AP-100,25,,3,1,Open at horizon,39
+1,O00422,AP-200,25,,3,1,Open at horizon,40
+1,O00425,AP-100,26,,3,0,Open at horizon,41
+1,O00433,AP-100,26,,3,0,Open at horizon,42
+1,O00434,AP-100,26,,3,0,Open at horizon,43
+1,X14-02,AP-100,14,15,1,1,Delivered late,44
+1,X15-01,AP-100,15,16,1,1,Delivered late,45
+1,X15-02,AP-100,15,16,1,1,Delivered late,46
+1,O00261,AP-300,16,17,1,1,Delivered late,47
+1,X16-01,AP-100,16,17,1,1,Delivered late,48
+1,O00274,AP-100,17,18,1,1,Delivered late,49
+1,O00276,AP-200,17,18,1,1,Delivered late,50
+1,X17-01,AP-100,17,18,1,1,Delivered late,51
+1,X17-02,AP-100,17,18,1,1,Delivered late,52
+1,O00281,AP-100,18,19,1,1,Delivered late,53
+1,O00287,AP-100,18,19,1,1,Delivered late,54
+1,O00293,AP-200,18,19,1,1,Delivered late,55
+1,X18-01,AP-100,18,20,1,2,Delivered late,56
+1,X18-02,AP-100,18,20,1,2,Delivered late,57
+1,O00314,AP-200,19,20,1,1,Delivered late,58
+1,O00316,AP-300,19,21,1,2,Delivered late,59
+1,X19-01,AP-100,19,21,1,2,Delivered late,60
+1,X19-02,AP-100,19,21,1,2,Delivered late,61
+1,O00323,AP-100,20,21,1,1,Delivered late,62
+1,O00327,AP-100,20,21,1,1,Delivered late,63
+1,O00329,AP-200,20,21,1,1,Delivered late,64
+1,X20-01,AP-100,20,22,1,2,Delivered late,65
+1,X20-02,AP-100,20,22,1,2,Delivered late,66
+1,O00340,AP-100,21,22,1,1,Delivered late,67
+1,O00343,AP-100,21,22,1,1,Delivered late,68
+1,O00346,AP-100,21,22,1,1,Delivered late,69
+1,O00349,AP-200,21,23,1,2,Delivered late,70
+1,O00352,AP-300,21,23,1,2,Delivered late,71
+1,X21-01,AP-100,21,23,1,2,Delivered late,72
+1,O00355,AP-100,22,23,1,1,Delivered late,73
+1,O00356,AP-100,22,23,1,1,Delivered late,74
+1,O00360,AP-100,22,23,1,1,Delivered late,75
+1,O00363,AP-100,22,23,1,1,Delivered late,76
+1,O00370,AP-300,22,24,1,2,Delivered late,77
+1,X22-01,AP-100,22,24,1,2,Delivered late,78
+1,X22-02,AP-100,22,24,1,2,Delivered late,79
+1,O00376,AP-100,23,24,1,1,Delivered late,80
+1,O00380,AP-100,23,24,1,1,Delivered late,81
+1,O00382,AP-100,23,25,1,2,Delivered late,82
+1,O00385,AP-200,23,25,1,2,Delivered late,83
+1,X23-01,AP-100,23,25,1,2,Delivered late,84
+1,X23-02,AP-100,23,25,1,2,Delivered late,85
+1,O00391,AP-100,24,25,1,1,Delivered late,86
+1,O00397,AP-100,24,25,1,1,Delivered late,87
+1,O00403,AP-200,24,26,1,2,Delivered late,88
+1,O00260,AP-200,16,17,2,1,Delivered late,89
+1,O00262,AP-300,16,17,2,1,Delivered late,90
+1,O00271,AP-100,17,18,2,1,Delivered late,91
+1,O00272,AP-100,17,18,2,1,Delivered late,92
+1,O00273,AP-100,17,18,2,1,Delivered late,93
+1,O00277,AP-200,17,18,2,1,Delivered late,94
+1,O00278,AP-200,17,18,2,1,Delivered late,95
+1,O00279,AP-300,17,18,2,1,Delivered late,96
+1,O00280,AP-300,17,18,2,1,Delivered late,97
+1,O00283,AP-100,18,19,2,1,Delivered late,98
+1,O00285,AP-100,18,19,2,1,Delivered late,99
+1,O00286,AP-100,18,19,2,1,Delivered late,100
+1,O00288,AP-100,18,19,2,1,Delivered late,101
+1,O00289,AP-100,18,19,2,1,Delivered late,102
+1,O00292,AP-100,18,19,2,1,Delivered late,103
+1,O00294,AP-200,18,19,2,1,Delivered late,104
+1,O00295,AP-200,18,19,2,1,Delivered late,105
+1,O00296,AP-200,18,19,2,1,Delivered late,106
+1,O00297,AP-300,18,19,2,1,Delivered late,107
+1,O00300,AP-100,19,20,2,1,Delivered late,108
+1,O00303,AP-100,19,20,2,1,Delivered late,109
+1,O00304,AP-100,19,20,2,1,Delivered late,110
+1,O00307,AP-100,19,20,2,1,Delivered late,111
+1,O00308,AP-100,19,20,2,1,Delivered late,112
+1,O00309,AP-100,19,20,2,1,Delivered late,113
+1,O00311,AP-200,19,20,2,1,Delivered late,114
+1,O00313,AP-200,19,20,2,1,Delivered late,115
+1,O00317,AP-100,20,21,2,1,Delivered late,116
+1,O00318,AP-100,20,21,2,1,Delivered late,117
+1,O00320,AP-100,20,21,2,1,Delivered late,118
+1,O00322,AP-100,20,21,2,1,Delivered late,119
+1,O00325,AP-100,20,21,2,1,Delivered late,120
+1,O00326,AP-100,20,21,2,1,Delivered late,121
+1,O00331,AP-200,20,21,2,1,Delivered late,122
+1,O00332,AP-200,20,22,2,2,Delivered late,123
+1,O00333,AP-300,20,22,2,2,Delivered late,124
+1,O00334,AP-300,20,22,2,2,Delivered late,125
+1,O00336,AP-100,21,22,2,1,Delivered late,126
+1,O00337,AP-100,21,22,2,1,Delivered late,127
+1,O00339,AP-100,21,22,2,1,Delivered late,128
+1,O00341,AP-100,21,22,2,1,Delivered late,129
+1,O00344,AP-100,21,22,2,1,Delivered late,130
+1,O00345,AP-100,21,22,2,1,Delivered late,131
+1,O00348,AP-200,21,23,2,2,Delivered late,132
+1,O00350,AP-200,21,23,2,2,Delivered late,133
+1,O00351,AP-300,21,23,2,2,Delivered late,134
+1,O00353,AP-100,22,23,2,1,Delivered late,135
+1,O00359,AP-100,22,23,2,1,Delivered late,136
+1,O00362,AP-100,22,23,2,1,Delivered late,137
+1,O00364,AP-100,22,23,2,1,Delivered late,138
+1,O00365,AP-200,22,24,2,2,Delivered late,139
+1,O00368,AP-200,22,24,2,2,Delivered late,140
+1,O00371,AP-100,23,24,2,1,Delivered late,141
+1,O00372,AP-100,23,24,2,1,Delivered late,142
+1,O00373,AP-100,23,24,2,1,Delivered late,143
+1,O00374,AP-100,23,24,2,1,Delivered late,144
+1,O00375,AP-100,23,24,2,1,Delivered late,145
+1,O00377,AP-100,23,24,2,1,Delivered late,146
+1,O00378,AP-100,23,24,2,1,Delivered late,147
+1,O00381,AP-100,23,25,2,2,Delivered late,148
+1,O00384,AP-200,23,25,2,2,Delivered late,149
+1,O00386,AP-200,23,25,2,2,Delivered late,150
+1,O00389,AP-100,24,25,2,1,Delivered late,151
+1,O00390,AP-100,24,25,2,1,Delivered late,152
+1,O00392,AP-100,24,25,2,1,Delivered late,153
+1,O00393,AP-100,24,25,2,1,Delivered late,154
+1,O00394,AP-100,24,25,2,1,Delivered late,155
+1,O00395,AP-100,24,25,2,1,Delivered late,156
+1,O00396,AP-100,24,25,2,1,Delivered late,157
+1,O00398,AP-100,24,26,2,2,Delivered late,158
+1,O00275,AP-200,17,18,3,1,Delivered late,159
+1,O00282,AP-100,18,19,3,1,Delivered late,160
+1,O00284,AP-100,18,19,3,1,Delivered late,161
+1,O00290,AP-100,18,19,3,1,Delivered late,162
+1,O00291,AP-100,18,19,3,1,Delivered late,163
+1,O00298,AP-300,18,19,3,1,Delivered late,164
+1,O00299,AP-100,19,20,3,1,Delivered late,165
+1,O00301,AP-100,19,20,3,1,Delivered late,166
+1,O00302,AP-100,19,20,3,1,Delivered late,167
+1,O00305,AP-100,19,20,3,1,Delivered late,168
+1,O00306,AP-100,19,20,3,1,Delivered late,169
+1,O00310,AP-100,19,20,3,1,Delivered late,170
+1,O00312,AP-200,19,20,3,1,Delivered late,171
+1,O00315,AP-300,19,20,3,1,Delivered late,172
+1,O00319,AP-100,20,21,3,1,Delivered late,173
+1,O00321,AP-100,20,21,3,1,Delivered late,174
+1,O00324,AP-100,20,21,3,1,Delivered late,175
+1,O00328,AP-100,20,21,3,1,Delivered late,176
+1,O00330,AP-200,20,21,3,1,Delivered late,177
+1,O00335,AP-100,21,22,3,1,Delivered late,178
+1,O00338,AP-100,21,22,3,1,Delivered late,179
+1,O00342,AP-100,21,22,3,1,Delivered late,180
+1,O00347,AP-200,21,22,3,1,Delivered late,181
+1,O00354,AP-100,22,23,3,1,Delivered late,182
+1,O00357,AP-100,22,23,3,1,Delivered late,183
+1,O00358,AP-100,22,23,3,1,Delivered late,184
+1,O00361,AP-100,22,23,3,1,Delivered late,185
+1,O00366,AP-200,22,24,3,2,Delivered late,186
+1,O00367,AP-200,22,24,3,2,Delivered late,187
+1,O00369,AP-300,22,24,3,2,Delivered late,188
+1,O00379,AP-100,23,24,3,1,Delivered late,189
+1,O00383,AP-200,23,25,3,2,Delivered late,190
+1,O00387,AP-300,23,25,3,2,Delivered late,191
+1,O00388,AP-300,23,25,3,2,Delivered late,192
+1,O00399,AP-100,24,26,3,2,Delivered late,193
+1,O00400,AP-100,24,26,3,2,Delivered late,194
+1,O00401,AP-200,24,26,3,2,Delivered late,195
+1,O00402,AP-200,24,26,3,2,Delivered late,196
+1,O00404,AP-200,24,26,3,2,Delivered late,197
+2,O00426,AP-100,26,,1,0,Open at horizon,1
+2,O00430,AP-100,26,,1,0,Open at horizon,2
+2,O00431,AP-100,26,,1,0,Open at horizon,3
+2,O00435,AP-100,26,,1,0,Open at horizon,4
+2,O00436,AP-100,26,,1,0,Open at horizon,5
+2,O00438,AP-200,26,,1,0,Open at horizon,6
+2,X26-01,AP-100,26,,1,0,Open at horizon,7
+2,O00427,AP-100,26,,2,0,Open at horizon,8
+2,O00428,AP-100,26,,2,0,Open at horizon,9
+2,O00429,AP-100,26,,2,0,Open at horizon,10
+2,O00432,AP-100,26,,2,0,Open at horizon,11
+2,O00437,AP-200,26,,2,0,Open at horizon,12
+2,O00439,AP-200,26,,2,0,Open at horizon,13
+2,O00440,AP-200,26,,2,0,Open at horizon,14
+2,O00441,AP-300,26,,2,0,Open at horizon,15
+2,O00442,AP-300,26,,2,0,Open at horizon,16
+2,O00433,AP-100,26,,3,0,Open at horizon,17
+2,O00434,AP-100,26,,3,0,Open at horizon,18
+2,X14-02,AP-100,14,15,1,1,Delivered late,19
+2,X15-01,AP-100,15,16,1,1,Delivered late,20
+2,X15-02,AP-100,15,16,1,1,Delivered late,21
+2,O00258,AP-200,16,17,1,1,Delivered late,22
+2,O00261,AP-300,16,17,1,1,Delivered late,23
+2,X16-01,AP-100,16,17,1,1,Delivered late,24
+2,O00274,AP-100,17,18,1,1,Delivered late,25
+2,O00276,AP-200,17,18,1,1,Delivered late,26
+2,X17-01,AP-100,17,18,1,1,Delivered late,27
+2,X17-02,AP-100,17,18,1,1,Delivered late,28
+2,O00287,AP-100,18,19,1,1,Delivered late,29
+2,O00293,AP-200,18,19,1,1,Delivered late,30
+2,X18-01,AP-100,18,19,1,1,Delivered late,31
+2,X18-02,AP-100,18,19,1,1,Delivered late,32
+2,O00314,AP-200,19,20,1,1,Delivered late,33
+2,O00316,AP-300,19,20,1,1,Delivered late,34
+2,X19-01,AP-100,19,20,1,1,Delivered late,35
+2,X19-02,AP-100,19,20,1,1,Delivered late,36
+2,O00323,AP-100,20,21,1,1,Delivered late,37
+2,O00327,AP-100,20,21,1,1,Delivered late,38
+2,O00329,AP-200,20,21,1,1,Delivered late,39
+2,X20-01,AP-100,20,21,1,1,Delivered late,40
+2,X20-02,AP-100,20,21,1,1,Delivered late,41
+2,O00340,AP-100,21,22,1,1,Delivered late,42
+2,O00343,AP-100,21,22,1,1,Delivered late,43
+2,O00346,AP-100,21,22,1,1,Delivered late,44
+2,O00349,AP-200,21,22,1,1,Delivered late,45
+2,O00352,AP-300,21,22,1,1,Delivered late,46
+2,X21-01,AP-100,21,22,1,1,Delivered late,47
+2,O00360,AP-100,22,23,1,1,Delivered late,48
+2,O00363,AP-100,22,23,1,1,Delivered late,49
+2,O00370,AP-300,22,23,1,1,Delivered late,50
+2,X22-01,AP-100,22,23,1,1,Delivered late,51
+2,X22-02,AP-100,22,23,1,1,Delivered late,52
+2,O00376,AP-100,23,24,1,1,Delivered late,53
+2,O00380,AP-100,23,24,1,1,Delivered late,54
+2,O00382,AP-100,23,24,1,1,Delivered late,55
+2,O00385,AP-200,23,24,1,1,Delivered late,56
+2,X23-01,AP-100,23,24,1,1,Delivered late,57
+2,X23-02,AP-100,23,24,1,1,Delivered late,58
+2,O00397,AP-100,24,25,1,1,Delivered late,59
+2,O00403,AP-200,24,25,1,1,Delivered late,60
+2,O00406,AP-300,24,25,1,1,Delivered late,61
+2,X24-01,AP-100,24,25,1,1,Delivered late,62
+2,X24-02,AP-100,24,25,1,1,Delivered late,63
+2,O00410,AP-100,25,26,1,1,Delivered late,64
+2,O00423,AP-300,25,26,1,1,Delivered late,65
+2,X25-01,AP-100,25,26,1,1,Delivered late,66
+2,X25-02,AP-100,25,26,1,1,Delivered late,67
+2,O00242,AP-200,15,16,2,1,Delivered late,68
+2,O00244,AP-300,15,16,2,1,Delivered late,69
+2,O00257,AP-200,16,17,2,1,Delivered late,70
+2,O00259,AP-200,16,17,2,1,Delivered late,71
+2,O00260,AP-200,16,17,2,1,Delivered late,72
+2,O00262,AP-300,16,17,2,1,Delivered late,73
+2,O00271,AP-100,17,18,2,1,Delivered late,74
+2,O00272,AP-100,17,18,2,1,Delivered late,75
+2,O00273,AP-100,17,18,2,1,Delivered late,76
+2,O00277,AP-200,17,18,2,1,Delivered late,77
+2,O00278,AP-200,17,18,2,1,Delivered late,78
+2,O00279,AP-300,17,18,2,1,Delivered late,79
+2,O00280,AP-300,17,18,2,1,Delivered late,80
+2,O00285,AP-100,18,19,2,1,Delivered late,81
+2,O00286,AP-100,18,19,2,1,Delivered late,82
+2,O00288,AP-100,18,19,2,1,Delivered late,83
+2,O00289,AP-100,18,19,2,1,Delivered late,84
+2,O00292,AP-100,18,19,2,1,Delivered late,85
+2,O00294,AP-200,18,19,2,1,Delivered late,86
+2,O00295,AP-200,18,19,2,1,Delivered late,87
+2,O00296,AP-200,18,19,2,1,Delivered late,88
+2,O00297,AP-300,18,19,2,1,Delivered late,89
+2,O00303,AP-100,19,20,2,1,Delivered late,90
+2,O00304,AP-100,19,20,2,1,Delivered late,91
+2,O00307,AP-100,19,20,2,1,Delivered late,92
+2,O00308,AP-100,19,20,2,1,Delivered late,93
+2,O00309,AP-100,19,20,2,1,Delivered late,94
+2,O00311,AP-200,19,20,2,1,Delivered late,95
+2,O00313,AP-200,19,20,2,1,Delivered late,96
+2,O00322,AP-100,20,21,2,1,Delivered late,97
+2,O00325,AP-100,20,21,2,1,Delivered late,98
+2,O00326,AP-100,20,21,2,1,Delivered late,99
+2,O00331,AP-200,20,21,2,1,Delivered late,100
+2,O00332,AP-200,20,21,2,1,Delivered late,101
+2,O00333,AP-300,20,21,2,1,Delivered late,102
+2,O00334,AP-300,20,21,2,1,Delivered late,103
+2,O00339,AP-100,21,22,2,1,Delivered late,104
+2,O00341,AP-100,21,22,2,1,Delivered late,105
+2,O00344,AP-100,21,22,2,1,Delivered late,106
+2,O00345,AP-100,21,22,2,1,Delivered late,107
+2,O00348,AP-200,21,22,2,1,Delivered late,108
+2,O00350,AP-200,21,22,2,1,Delivered late,109
+2,O00351,AP-300,21,22,2,1,Delivered late,110
+2,O00359,AP-100,22,23,2,1,Delivered late,111
+2,O00362,AP-100,22,23,2,1,Delivered late,112
+2,O00364,AP-100,22,23,2,1,Delivered late,113
+2,O00365,AP-200,22,23,2,1,Delivered late,114
+2,O00368,AP-200,22,23,2,1,Delivered late,115
+2,O00377,AP-100,23,24,2,1,Delivered late,116
+2,O00378,AP-100,23,24,2,1,Delivered late,117
+2,O00381,AP-100,23,24,2,1,Delivered late,118
+2,O00384,AP-200,23,24,2,1,Delivered late,119
+2,O00386,AP-200,23,24,2,1,Delivered late,120
+2,O00392,AP-100,24,25,2,1,Delivered late,121
+2,O00393,AP-100,24,25,2,1,Delivered late,122
+2,O00394,AP-100,24,25,2,1,Delivered late,123
+2,O00395,AP-100,24,25,2,1,Delivered late,124
+2,O00396,AP-100,24,25,2,1,Delivered late,125
+2,O00398,AP-100,24,25,2,1,Delivered late,126
+2,O00405,AP-300,24,25,2,1,Delivered late,127
+2,O00409,AP-100,25,26,2,1,Delivered late,128
+2,O00411,AP-100,25,26,2,1,Delivered late,129
+2,O00412,AP-100,25,26,2,1,Delivered late,130
+2,O00413,AP-100,25,26,2,1,Delivered late,131
+2,O00414,AP-100,25,26,2,1,Delivered late,132
+2,O00415,AP-100,25,26,2,1,Delivered late,133
+2,O00417,AP-100,25,26,2,1,Delivered late,134
+2,O00418,AP-100,25,26,2,1,Delivered late,135
+2,O00419,AP-200,25,26,2,1,Delivered late,136
+2,O00420,AP-200,25,26,2,1,Delivered late,137
+2,O00421,AP-200,25,26,2,1,Delivered late,138
+2,O00424,AP-300,25,26,2,1,Delivered late,139
+2,O00243,AP-300,15,16,3,1,Delivered late,140
+2,O00256,AP-100,16,17,3,1,Delivered late,141
+2,O00275,AP-200,17,18,3,1,Delivered late,142
+2,O00290,AP-100,18,19,3,1,Delivered late,143
+2,O00291,AP-100,18,19,3,1,Delivered late,144
+2,O00298,AP-300,18,19,3,1,Delivered late,145
+2,O00305,AP-100,19,20,3,1,Delivered late,146
+2,O00306,AP-100,19,20,3,1,Delivered late,147
+2,O00310,AP-100,19,20,3,1,Delivered late,148
+2,O00312,AP-200,19,20,3,1,Delivered late,149
+2,O00315,AP-300,19,20,3,1,Delivered late,150
+2,O00324,AP-100,20,21,3,1,Delivered late,151
+2,O00328,AP-100,20,21,3,1,Delivered late,152
+2,O00330,AP-200,20,21,3,1,Delivered late,153
+2,O00342,AP-100,21,22,3,1,Delivered late,154
+2,O00347,AP-200,21,22,3,1,Delivered late,155
+2,O00358,AP-100,22,23,3,1,Delivered late,156
+2,O00361,AP-100,22,23,3,1,Delivered late,157
+2,O00366,AP-200,22,23,3,1,Delivered late,158
+2,O00367,AP-200,22,23,3,1,Delivered late,159
+2,O00369,AP-300,22,23,3,1,Delivered late,160
+2,O00379,AP-100,23,24,3,1,Delivered late,161
+2,O00383,AP-200,23,24,3,1,Delivered late,162
+2,O00387,AP-300,23,24,3,1,Delivered late,163
+2,O00388,AP-300,23,24,3,1,Delivered late,164
+2,O00399,AP-100,24,25,3,1,Delivered late,165
+2,O00400,AP-100,24,25,3,1,Delivered late,166
+2,O00401,AP-200,24,25,3,1,Delivered late,167
+2,O00402,AP-200,24,25,3,1,Delivered late,168
+2,O00404,AP-200,24,25,3,1,Delivered late,169
+2,O00416,AP-100,25,26,3,1,Delivered late,170
+2,O00422,AP-200,25,26,3,1,Delivered late,171
+3,O00284,AP-100,18,,3,8,Open at horizon,1
+3,O00290,AP-100,18,,3,8,Open at horizon,2
+3,O00291,AP-100,18,,3,8,Open at horizon,3
+3,O00298,AP-300,18,,3,8,Open at horizon,4
+3,O00299,AP-100,19,,3,7,Open at horizon,5
+3,O00301,AP-100,19,,3,7,Open at horizon,6
+3,O00302,AP-100,19,,3,7,Open at horizon,7
+3,O00305,AP-100,19,,3,7,Open at horizon,8
+3,O00306,AP-100,19,,3,7,Open at horizon,9
+3,O00310,AP-100,19,,3,7,Open at horizon,10
+3,O00312,AP-200,19,,3,7,Open at horizon,11
+3,O00315,AP-300,19,,3,7,Open at horizon,12
+3,O00319,AP-100,20,,3,6,Open at horizon,13
+3,O00321,AP-100,20,,3,6,Open at horizon,14
+3,O00324,AP-100,20,,3,6,Open at horizon,15
+3,O00328,AP-100,20,,3,6,Open at horizon,16
+3,O00330,AP-200,20,,3,6,Open at horizon,17
+3,O00335,AP-100,21,,3,5,Open at horizon,18
+3,O00338,AP-100,21,,3,5,Open at horizon,19
+3,O00342,AP-100,21,,3,5,Open at horizon,20
+3,O00347,AP-200,21,,3,5,Open at horizon,21
+3,O00354,AP-100,22,,3,4,Open at horizon,22
+3,O00357,AP-100,22,,3,4,Open at horizon,23
+3,O00358,AP-100,22,,3,4,Open at horizon,24
+3,O00361,AP-100,22,,3,4,Open at horizon,25
+3,O00366,AP-200,22,,3,4,Open at horizon,26
+3,O00367,AP-200,22,,3,4,Open at horizon,27
+3,O00369,AP-300,22,,3,4,Open at horizon,28
+3,O00379,AP-100,23,,3,3,Open at horizon,29
+3,O00383,AP-200,23,,3,3,Open at horizon,30
+3,O00387,AP-300,23,,3,3,Open at horizon,31
+3,O00388,AP-300,23,,3,3,Open at horizon,32
+3,O00399,AP-100,24,,3,2,Open at horizon,33
+3,O00400,AP-100,24,,3,2,Open at horizon,34
+3,O00401,AP-200,24,,3,2,Open at horizon,35
+3,O00402,AP-200,24,,3,2,Open at horizon,36
+3,O00404,AP-200,24,,3,2,Open at horizon,37
+3,O00408,AP-100,25,,3,1,Open at horizon,38
+3,O00416,AP-100,25,,3,1,Open at horizon,39
+3,O00422,AP-200,25,,3,1,Open at horizon,40
+3,O00425,AP-100,26,,3,0,Open at horizon,41
+3,O00433,AP-100,26,,3,0,Open at horizon,42
+3,O00434,AP-100,26,,3,0,Open at horizon,43
+3,O00240,AP-200,15,16,2,1,Delivered late,44
+3,O00242,AP-200,15,16,2,1,Delivered late,45
+3,O00244,AP-300,15,16,2,1,Delivered late,46
+3,O00255,AP-100,16,17,2,1,Delivered late,47
+3,O00257,AP-200,16,17,2,1,Delivered late,48
+3,O00259,AP-200,16,17,2,1,Delivered late,49
+3,O00260,AP-200,16,17,2,1,Delivered late,50
+3,O00262,AP-300,16,17,2,1,Delivered late,51
+3,O00268,AP-100,17,18,2,1,Delivered late,52
+3,O00271,AP-100,17,18,2,1,Delivered late,53
+3,O00272,AP-100,17,18,2,1,Delivered late,54
+3,O00273,AP-100,17,18,2,1,Delivered late,55
+3,O00277,AP-200,17,18,2,1,Delivered late,56
+3,O00278,AP-200,17,18,2,1,Delivered late,57
+3,O00279,AP-300,17,18,2,1,Delivered late,58
+3,O00280,AP-300,17,19,2,2,Delivered late,59
+3,O00283,AP-100,18,19,2,1,Delivered late,60
+3,O00285,AP-100,18,19,2,1,Delivered late,61
+3,O00286,AP-100,18,19,2,1,Delivered late,62
+3,O00288,AP-100,18,19,2,1,Delivered late,63
+3,O00289,AP-100,18,19,2,1,Delivered late,64
+3,O00292,AP-100,18,19,2,1,Delivered late,65
+3,O00294,AP-200,18,19,2,1,Delivered late,66
+3,O00295,AP-200,18,19,2,1,Delivered late,67
+3,O00296,AP-200,18,19,2,1,Delivered late,68
+3,O00297,AP-300,18,19,2,1,Delivered late,69
+3,O00307,AP-100,19,20,2,1,Delivered late,70
+3,O00308,AP-100,19,20,2,1,Delivered late,71
+3,O00309,AP-100,19,20,2,1,Delivered late,72
+3,O00311,AP-200,19,20,2,1,Delivered late,73
+3,O00313,AP-200,19,20,2,1,Delivered late,74
+3,O00334,AP-300,20,21,2,1,Delivered late,75
+3,O00223,AP-200,14,21,3,7,Delivered late,76
+3,O00232,AP-100,15,21,3,6,Delivered late,77
+3,O00233,AP-100,15,22,3,7,Delivered late,78
+3,O00239,AP-200,15,22,3,7,Delivered late,79
+3,O00241,AP-200,15,22,3,7,Delivered late,80
+3,O00243,AP-300,15,22,3,7,Delivered late,81
+3,O00245,AP-100,16,22,3,6,Delivered late,82
+3,O00246,AP-100,16,23,3,7,Delivered late,83
+3,O00247,AP-100,16,23,3,7,Delivered late,84
+3,O00252,AP-100,16,24,3,8,Delivered late,85
+3,O00256,AP-100,16,24,3,8,Delivered late,86
+3,O00263,AP-100,17,24,3,7,Delivered late,87
+3,O00264,AP-100,17,25,3,8,Delivered late,88
+3,O00265,AP-100,17,25,3,8,Delivered late,89
+3,O00267,AP-100,17,26,3,9,Delivered late,90
+3,O00275,AP-200,17,26,3,9,Delivered late,91
+3,O00282,AP-100,18,26,3,8,Delivered late,92
+4,O00366,AP-200,22,,3,4,Open at horizon,1
+4,O00367,AP-200,22,,3,4,Open at horizon,2
+4,O00369,AP-300,22,,3,4,Open at horizon,3
+4,O00379,AP-100,23,,3,3,Open at horizon,4
+4,O00383,AP-200,23,,3,3,Open at horizon,5
+4,O00387,AP-300,23,,3,3,Open at horizon,6
+4,O00388,AP-300,23,,3,3,Open at horizon,7
+4,O00399,AP-100,24,,3,2,Open at horizon,8
+4,O00400,AP-100,24,,3,2,Open at horizon,9
+4,O00401,AP-200,24,,3,2,Open at horizon,10
+4,O00402,AP-200,24,,3,2,Open at horizon,11
+4,O00404,AP-200,24,,3,2,Open at horizon,12
+4,O00408,AP-100,25,,3,1,Open at horizon,13
+4,O00416,AP-100,25,,3,1,Open at horizon,14
+4,O00422,AP-200,25,,3,1,Open at horizon,15
+4,O00425,AP-100,26,,3,0,Open at horizon,16
+4,O00433,AP-100,26,,3,0,Open at horizon,17
+4,O00434,AP-100,26,,3,0,Open at horizon,18
+4,O00223,AP-200,14,15,3,1,Delivered late,19
+4,O00241,AP-200,15,16,3,1,Delivered late,20
+4,O00243,AP-300,15,16,3,1,Delivered late,21
+4,O00247,AP-100,16,17,3,1,Delivered late,22
+4,O00252,AP-100,16,17,3,1,Delivered late,23
+4,O00256,AP-100,16,17,3,1,Delivered late,24
+4,O00263,AP-100,17,18,3,1,Delivered late,25
+4,O00264,AP-100,17,18,3,1,Delivered late,26
+4,O00265,AP-100,17,18,3,1,Delivered late,27
+4,O00267,AP-100,17,19,3,2,Delivered late,28
+4,O00275,AP-200,17,19,3,2,Delivered late,29
+4,O00282,AP-100,18,19,3,1,Delivered late,30
+4,O00284,AP-100,18,19,3,1,Delivered late,31
+4,O00290,AP-100,18,19,3,1,Delivered late,32
+4,O00291,AP-100,18,19,3,1,Delivered late,33
+4,O00298,AP-300,18,20,3,2,Delivered late,34
+4,O00299,AP-100,19,20,3,1,Delivered late,35
+4,O00301,AP-100,19,20,3,1,Delivered late,36
+4,O00302,AP-100,19,20,3,1,Delivered late,37
+4,O00305,AP-100,19,21,3,2,Delivered late,38
+4,O00306,AP-100,19,21,3,2,Delivered late,39
+4,O00310,AP-100,19,21,3,2,Delivered late,40
+4,O00312,AP-200,19,22,3,3,Delivered late,41
+4,O00315,AP-300,19,22,3,3,Delivered late,42
+4,O00319,AP-100,20,22,3,2,Delivered late,43
+4,O00321,AP-100,20,22,3,2,Delivered late,44
+4,O00324,AP-100,20,22,3,2,Delivered late,45
+4,O00328,AP-100,20,23,3,3,Delivered late,46
+4,O00330,AP-200,20,23,3,3,Delivered late,47
+4,O00335,AP-100,21,24,3,3,Delivered late,48
+4,O00338,AP-100,21,24,3,3,Delivered late,49
+4,O00342,AP-100,21,24,3,3,Delivered late,50
+4,O00347,AP-200,21,25,3,4,Delivered late,51
+4,O00354,AP-100,22,25,3,3,Delivered late,52
+4,O00357,AP-100,22,26,3,4,Delivered late,53
+4,O00358,AP-100,22,26,3,4,Delivered late,54
+4,O00361,AP-100,22,26,3,4,Delivered late,55

@@ -1,0 +1,7 @@
+scenario,scenario_name
+-1,Undisrupted reference
+0,No action
+1,Expedite transportation
+2,Existing secondary allocation
+3,FAL rescheduling and priority
+4,Integrated recovery

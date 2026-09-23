@@ -1,0 +1,7 @@
+{
+  "name": "AeroPlan Control Tower",
+  "dataColors": ["#12A88C", "#3267D6", "#E8A23A", "#D75656", "#845EC2", "#7393AB"],
+  "background": "#F5F7FA",
+  "foreground": "#112438",
+  "tableAccent": "#12A88C"
+}

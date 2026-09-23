@@ -1,0 +1,4 @@
+component,opening_units,target_coverage_weeks
+AIRFRAME,4,0.5
+ENGINE,8,0.5
+AVIONICS,4,0.5

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+scratch/
+*.build.sqlite
+*.pbix
+
+# Personal application materials stay outside this public project.
+docs/career_materials.md
+private/

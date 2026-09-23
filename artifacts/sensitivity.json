@@ -1,0 +1,35 @@
+[
+  {
+    "profile": "balanced",
+    "weights": {
+      "backlog_reduction": 0.25,
+      "inventory_stability": 0.15,
+      "operational_risk": 0.1,
+      "otif": 0.3,
+      "recovery_cost": 0.2
+    },
+    "winner": 4
+  },
+  {
+    "profile": "service_first",
+    "weights": {
+      "backlog_reduction": 0.3,
+      "inventory_stability": 0.1,
+      "operational_risk": 0.1,
+      "otif": 0.45,
+      "recovery_cost": 0.05
+    },
+    "winner": 4
+  },
+  {
+    "profile": "cost_cautious",
+    "weights": {
+      "backlog_reduction": 0.15,
+      "inventory_stability": 0.1,
+      "operational_risk": 0.15,
+      "otif": 0.2,
+      "recovery_cost": 0.4
+    },
+    "winner": 2
+  }
+]

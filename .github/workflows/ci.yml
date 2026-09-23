@@ -1,0 +1,25 @@
+name: Reproducible planning validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run behavioral and reconciliation tests
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate seed-42 outputs
+        run: python -m aeroplan --seed 42 --output artifacts
+      - name: Check deterministic text exports
+        run: git diff --exit-code -- artifacts/csv artifacts/manifest.json artifacts/root_causes.json artifacts/validation.json artifacts/sensitivity.json artifacts/executive_insights.md artifacts/scenario_otif.svg artifacts/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aeroplan-evidence-py${{ matrix.python-version }}
+          path: artifacts/
