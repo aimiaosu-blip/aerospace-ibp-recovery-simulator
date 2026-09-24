@@ -161,6 +161,7 @@ class PipelineTests(unittest.TestCase):
                     self.assertEqual(backlog,sql_backlog)
                 self.assertEqual(con.execute('SELECT COUNT(*) FROM supplier_release_load WHERE allocated_units>available_capacity').fetchone()[0],0)
                 self.assertEqual(con.execute('SELECT COUNT(*) FROM weekly_kpi').fetchone()[0],6*26)
+                self.assertEqual(con.execute("SELECT DISTINCT typeof(magnitude) FROM constraint_exceptions").fetchall(), [('real',)])
                 # Last four weeks are pooled by numerator and denominator, independently of SQL windows.
                 for sid in range(5):
                     rolled = con.execute('SELECT rolling_4w_otif FROM weekly_kpi WHERE scenario=? AND week=26',(sid,)).fetchone()[0]

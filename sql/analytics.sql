@@ -42,12 +42,13 @@ SELECT scenario, order_id, product, due_week, delivery_week, priority, delay_wee
           CASE WHEN delivery_week IS NULL THEN 0 ELSE 1 END, priority, due_week, order_id) AS review_sequence
 FROM order_fulfillment WHERE late_or_open=1;
 
+-- Explicit numeric type avoids SQLite-version-dependent UNION affinity (1 vs 1.0).
 CREATE VIEW constraint_exceptions AS
 SELECT scenario, week, 'FAL demand overload' AS exception_type, 'FAL' AS resource,
-       overload_hours AS magnitude, 'hours' AS unit
+       CAST(overload_hours AS REAL) AS magnitude, 'hours' AS unit
 FROM capacity_execution WHERE overload_hours>0
 UNION ALL
-SELECT scenario, week, 'Material blocking', component, blocked_orders, 'order-week events'
+SELECT scenario, week, 'Material blocking', component, CAST(blocked_orders AS REAL), 'order-week events'
 FROM material_balance WHERE blocked_orders>0;
 
 CREATE VIEW supplier_release_load AS

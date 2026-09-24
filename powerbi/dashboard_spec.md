@@ -129,7 +129,7 @@ No week or family slicer on this page. Scenario set S0–S4 only; exclude -1. Co
 |Bottom left|Comparison matrix|Scenario, OTIF, ending backlog, backlog reduction, inventory stability, cost, risk, score, rank|All decision criteria visible|
 |Bottom right|Sensitivity table / text|Balanced, service-first and cost-cautious winners from `sensitivity.json`|Preference robustness|
 
-Import `sensitivity.json` as a disconnected three-row table if desired: convert list to table, expand profile/winner/weights, and expand each weight. Use a formatted table and label “Sensitivity profiles — requires pipeline refresh.” Score card should use a visual filter `rank=1`; other visuals should not inherit that filter. Scatter tooltip includes all utility components. Explain that scores are relative to the included alternatives and risk is a proxy.
+Import `sensitivity.json` as a disconnected three-row table if desired: convert list to table, expand profile/winner/weights, and expand each weight. Use a formatted table and label “Sensitivity profiles — requires pipeline refresh.” For the top recommendation cards, use the direct `scenario_evaluation` fields (scenario, weighted_score, otif and recovery_cost), each aggregated by MAX, with a visual filter `rank=1`. Other visuals should not inherit that filter. The supplied Full Horizon measures require one `dim_scenario` value in context; use them in charts or tables grouped by that dimension. A filter on the fact-table rank alone does not propagate back through the single-direction relationship and can leave those measures blank. Scatter tooltip includes all utility components. Explain that scores are relative to the included alternatives and risk is a proxy.
 
 ## 4. Acceptance checklist before claiming a built dashboard
 
