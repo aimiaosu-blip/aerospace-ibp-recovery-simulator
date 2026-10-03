@@ -251,3 +251,37 @@ Unique SQLite indexes protect main fact business keys. Python validates master r
 - root_causes.json: constraint evidence, receipt-deficit timing, at-risk IDs and isolated demand/capacity counterfactuals.
 - sensitivity.json: policy weights and winner per preference profile.
 - executive_insights.md, index.html and scenario_otif.svg: data-driven summaries of the same results.
+
+
+## Portfolio outputs (`artifacts/portfolio/`)
+
+All records are synthetic and independent of company data. Full definitions, units, formulas and caveats are in [methodology](methodology.md#portfolio-complexity--cost-analytics).
+
+| File / field | Grain and meaning |
+|---|---|
+| `comparison.csv`, `comparison.json` | One row per `portfolio_scenario` (four values); Python quantitative source of truth |
+| `active_items`, `variants`, `low_volume_ratio` | Component count, count beyond three functional families, share below configured horizon requirement threshold |
+| `supplier_fragmentation` | 1 − vendor-group capacity HHI |
+| `lifecycle_maturity`, `lifecycle_immaturity` | Mean maturity and its complement |
+| `order_frequency`, `demand_variability` | Mean positive-requirement week frequency; mean weekly item coefficient of variation |
+| `cross_aircraft_commonality`, `lack_of_commonality` | Mean normalized aircraft coverage and its complement |
+| `exception_frequency`, `exceptions` | Logged constraint events per order-week; raw event count |
+| `complexity_index` | 0–100 weighted capped normalization; configured scales shared across scenarios |
+| `average_inventory_units`, `ending_inventory_units` | Average total weekly stock and end-horizon total stock, component units |
+| `otif` | Fraction of individual aircraft commitments delivered on time in full |
+| `ending_backlog`, `backlog_unit_weeks` | End-horizon open aircraft and cumulative weekly backlog exposure |
+| `recovery_cost` | Existing engine action cost, illustrative USD |
+| `cost_of_complexity`, `total_modeled_cost` | Scoped administration/holding/exception/lifecycle/conversion model; latter adds recovery cost once |
+| `standardization_proxy` | Cross-aircraft commonality |
+| `flexibility_proxy` | Active items / 7; retained variant-choice proxy only |
+| `resilience_proxy` | Vendor diversification only; not disruption recovery probability |
+| `cost_rank` | Ascending total modeled cost, deterministic alphabetical tie break |
+| `assumptions.json` | Seed, horizon, recovery policy, index weights/scales, cost coefficients, master/result digests and per-scenario cost/index audits |
+| `tradeoff.json` | Cost, standardization, flexibility and resilience coordinates by scenario |
+| `evidence.json` | Scenario-keyed comparison and assumption facts; candidates carry resolvable evidence IDs |
+| `ai_insights.json` | Existing selector mode, fallback reason, source digest and accepted evidence-linked interpretations |
+| `<scenario>/master_data.json` | Complete executable synthetic master data; `vendor_group` identifies vendor concentration independently of item-specific source capacity |
+| `<scenario>/portfolio_items.csv` | One item: component, family, active flag, assumed maturity, aircraft count, synthetic unit value |
+| `<scenario>/ibp_result.json`, `*.csv` | Full scenario master and IBP result tables; recovery `scenario` remains 4 (portfolio identity comes from parent folder) |
+| `<scenario>/validation.json` | Shared engine conservation, capacity, lead-time, order and frozen-history checks |
+| `report.md`, `index.html` | Human-readable comparison and trade-off bars; links to source evidence |

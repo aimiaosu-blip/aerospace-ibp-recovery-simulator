@@ -1,0 +1,30 @@
+[
+  {
+    "flexibility_proxy": 1.0,
+    "portfolio_scenario": "Baseline",
+    "resilience_proxy": 0.8054320988,
+    "standardization_proxy": 0.1428571429,
+    "total_modeled_cost": 4047350.0
+  },
+  {
+    "flexibility_proxy": 0.7142857143,
+    "portfolio_scenario": "Standardization",
+    "resilience_proxy": 0.7740740741,
+    "standardization_proxy": 0.4,
+    "total_modeled_cost": 4072375.0
+  },
+  {
+    "flexibility_proxy": 1.0,
+    "portfolio_scenario": "Consolidation",
+    "resilience_proxy": 0.6516439909,
+    "standardization_proxy": 0.1428571429,
+    "total_modeled_cost": 4037750.0
+  },
+  {
+    "flexibility_proxy": 0.4285714286,
+    "portfolio_scenario": "Global Product Adoption",
+    "resilience_proxy": 0.4108641975,
+    "standardization_proxy": 1.0,
+    "total_modeled_cost": 4157140.0
+  }
+]

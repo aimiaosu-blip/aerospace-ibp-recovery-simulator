@@ -230,3 +230,21 @@ Validation includes exact evidence-to-SQL reconciliation, immutable input/KPI ch
 adversarial model responses, adapter contract tests, offline fallback and seed
 sensitivity. Local-model success is tested with a mocked endpoint; actual model
 quality is not benchmarked and no live LLM run is claimed.
+
+
+## Portfolio Complexity & Cost Analytics
+
+**Synthetic independent portfolio project — no Ericsson/company data or realized savings claims.** The new module compares Baseline, Standardization, Consolidation and Global Product Adoption by changing actual component/BOM, supplier, route and inventory masters and rerunning the same finite IBP engine. It measures nine complexity dimensions with configurable weights/scales, a transparent illustrative Cost of Complexity model, and cost–standardization–flexibility–resilience trade-offs. Every portfolio uses the same aircraft demand, disruption and integrated recovery policy.
+
+Run the complete original + portfolio pipeline:
+
+```sh
+python -m aeroplan --seed 42 --output artifacts
+python -m unittest discover -s tests -v
+# Optional JSON coefficient / index overrides:
+python -m aeroplan --portfolio-config policy.json --output artifacts-custom
+```
+
+Start with [portfolio comparison and trade-offs](artifacts/portfolio/report.md), [HTML report](artifacts/portfolio/index.html), [CSV](artifacts/portfolio/comparison.csv), [assumptions](artifacts/portfolio/assumptions.json) and [evidence](artifacts/portfolio/evidence.json). Full scenario master data and IBP ledgers are in the four subfolders. Methodology defines every formula and proxy: [portfolio methodology](docs/methodology.md#portfolio-complexity--cost-analytics).
+
+Python/SQL remain the quantitative source of truth. The module reuses the existing evidence-linked AI candidate selector: AI can change briefing emphasis only, never KPIs or ranking. Default offline fallback is deterministic. `cost_rank` is a cost-only reporting order, not a multi-objective recommendation; flexibility and resilience are explicitly limited proxies. Lower complexity is not assumed to improve service or total cost.

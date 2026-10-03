@@ -1,0 +1,43 @@
+{
+  "fallback_reason": "no_llm_requested",
+  "interpretations": [
+    {
+      "evidence_ids": [
+        "portfolio_comparison:Baseline",
+        "portfolio_assumptions:Baseline"
+      ],
+      "id": "portfolio_tradeoff:Baseline",
+      "interpretation": "Baseline: compare modeled cost and service with commonality, retained variant choice and vendor diversification. Proxies are not calibrated resilience probabilities; all coefficients and portfolio changes are synthetic.",
+      "kind": "portfolio_tradeoff:Baseline"
+    },
+    {
+      "evidence_ids": [
+        "portfolio_comparison:Standardization",
+        "portfolio_assumptions:Standardization"
+      ],
+      "id": "portfolio_tradeoff:Standardization",
+      "interpretation": "Standardization: compare modeled cost and service with commonality, retained variant choice and vendor diversification. Proxies are not calibrated resilience probabilities; all coefficients and portfolio changes are synthetic.",
+      "kind": "portfolio_tradeoff:Standardization"
+    },
+    {
+      "evidence_ids": [
+        "portfolio_comparison:Consolidation",
+        "portfolio_assumptions:Consolidation"
+      ],
+      "id": "portfolio_tradeoff:Consolidation",
+      "interpretation": "Consolidation: compare modeled cost and service with commonality, retained variant choice and vendor diversification. Proxies are not calibrated resilience probabilities; all coefficients and portfolio changes are synthetic.",
+      "kind": "portfolio_tradeoff:Consolidation"
+    },
+    {
+      "evidence_ids": [
+        "portfolio_comparison:Global Product Adoption",
+        "portfolio_assumptions:Global Product Adoption"
+      ],
+      "id": "portfolio_tradeoff:Global Product Adoption",
+      "interpretation": "Global Product Adoption: compare modeled cost and service with commonality, retained variant choice and vendor diversification. Proxies are not calibrated resilience probabilities; all coefficients and portfolio changes are synthetic.",
+      "kind": "portfolio_tradeoff:Global Product Adoption"
+    }
+  ],
+  "mode": "deterministic_fallback",
+  "source_digest": "d352b1ea61db18ed1348578a3f909130efdd382deb48fcb058962d96ce656bcd"
+}

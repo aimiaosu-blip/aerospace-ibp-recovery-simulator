@@ -1,0 +1,25 @@
+portfolio_scenario,cost_component,synthetic_usd
+Baseline,item_administration,8400
+Baseline,supplier_administration,19200
+Baseline,exception_handling,11970
+Baseline,inventory_holding,57800.0
+Baseline,lifecycle_support,1980.0
+Baseline,conversion,0
+Standardization,item_administration,6000
+Standardization,supplier_administration,14400
+Standardization,exception_handling,5985
+Standardization,inventory_holding,63000.0
+Standardization,lifecycle_support,990.0
+Standardization,conversion,16000
+Consolidation,item_administration,8400
+Consolidation,supplier_administration,9600
+Consolidation,exception_handling,11970
+Consolidation,inventory_holding,57800.0
+Consolidation,lifecycle_support,1980.0
+Consolidation,conversion,0
+Global Product Adoption,item_administration,3600
+Global Product Adoption,supplier_administration,7200
+Global Product Adoption,exception_handling,11060
+Global Product Adoption,inventory_holding,56280.0
+Global Product Adoption,lifecycle_support,0.0
+Global Product Adoption,conversion,32000

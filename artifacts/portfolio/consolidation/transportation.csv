@@ -1,0 +1,9 @@
+supplier,standard_weeks,express_weeks,express_capacity
+S-A1,2,1,12
+S-A2,2,1,12
+S-E1-AP-100,2,1,0
+S-E1-AP-200,2,1,0
+S-E1-AP-300,2,1,0
+S-V1-AP-100,2,1,0
+S-V1-AP-200,2,1,0
+S-V1-AP-300,2,1,0

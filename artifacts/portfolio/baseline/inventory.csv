@@ -1,0 +1,8 @@
+component,opening_units,target_coverage_weeks
+AIRFRAME,4,0.5
+ENGINE-AP-100,2,0.5
+ENGINE-AP-200,2,0.5
+ENGINE-AP-300,2,0.5
+AVIONICS-AP-100,1,0.5
+AVIONICS-AP-200,1,0.5
+AVIONICS-AP-300,1,0.5

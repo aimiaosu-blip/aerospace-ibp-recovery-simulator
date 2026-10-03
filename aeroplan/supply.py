@@ -20,7 +20,7 @@ def plan_supply(data, orders, cfg, scenario):
     for (week, product), units in demand.items():
         consensus = max(units, int(forecast[week, product] + .5))
         for component in [x['component'] for x in data['components']]:
-            requirements[week, component] += consensus * bom[product, component]
+            requirements[week, component] += consensus * bom.get((product, component), 0)
     increments = defaultdict(int)
     for o in orders:
         if o['incremental']:
@@ -66,3 +66,4 @@ def plan_supply(data, orders, cfg, scenario):
                 secondary = min(second['weekly_capacity'], planned-primary + increments[due])
                 append(second, release, secondary, second['weekly_capacity'], 0, scenario == 4)
     return rows, receipts
+

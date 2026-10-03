@@ -73,3 +73,39 @@ Floating-point values are serialized to ten decimal places in CSV, JSON and SQLi
 ## Known limits and useful extensions
 
 The model omits detailed aircraft configurations, multi-stage assembly, WIP, yields, cash flow, contract penalties, stochastic transit failures and finite upstream work-center loading. A next iteration could add customer promise dates, a genuine rolling 26-week optimization horizon, mixed-integer scheduling and stress-tested cost distributions. Any extension must preserve scope: source qualification and supplier creation remain outside the IBP planner's authority.
+
+
+## Portfolio Complexity & Cost Analytics
+
+This is a **synthetic independent portfolio project**, unrelated to any employer's data, product design, supplier agreements or achieved savings. Aircraft labels, variant mappings, qualifications, costs and lifecycle values are fictional. It demonstrates a transferable analysis method for cost of portfolio complexity; it is not an Ericsson case study.
+
+### Controlled experiments
+
+`aeroplan.portfolio.masters` constructs four complete, independent master-data snapshots before running the existing `simulate` engine. All use the same seed, unit aircraft orders, forecast vintages, disruption and integrated recovery policy (scenario 4); each has its own undisrupted reference. Existing recovery scenarios remain unchanged. The engine now supports sparse BOMs (absent component requirements mean zero); all existing conservation and capacity validations still apply.
+
+| Portfolio | Actual master-data intervention |
+|---|---|
+| Baseline | AIRFRAME common; three aircraft-specific ENGINE and three AVIONICS variants, seven active items. Dedicated engine capacities 28/11/5 and avionics capacities 14/5/3. |
+| Standardization | Merge the three avionics variants into one common item with capacity 22; replace the BOM, suppliers, routes and inventory; five items. |
+| Consolidation | Retain seven items; group engine vendors and avionics vendors separately; reduce each non-airframe item source capacity by one unit/week and extend standard transit by one week. Capacity stays item-specific, not a shared vendor pool. |
+| Global Product Adoption | Also merge engines into one common item with capacity 44; engine and avionics share a fictional vendor group; three items. |
+
+Merging preserves physical BOM demand: each aircraft still needs one airframe, two engines, one avionics shipset. Dedicated variants carry one opening shipset each; a pooled family carries two. AIRFRAME stock and its disruption/secondary source rules are preserved. Common items assume maturity 1; dedicated variants assume maturity .9/.7/.3. These are **ex ante synthetic assumptions, not consequences proven by standardization**. Supplier vendor groups model correlated exposure and administration only; capacity constraints remain source/item-specific. Opening supply pipelines are rebuilt from each scenario's lead times, so these are steady-state alternative designs, not an in-flight migration simulation. Conversion cost is illustrative; transition downtime is not simulated.
+
+### Indicators and configurable index
+
+Active items = modeled component count; variants = active items minus functional families. Low-volume ratio = share with horizon gross requirements below 150 units. Gross requirements are derived from all disrupted aircraft orders and the scenario BOM, not actual fulfilled consumption. Supplier fragmentation = `1 - sum(capacity_share_by_vendor_group ** 2)` (capacity in component units; an illustrative exposure measure, not spend concentration). Lifecycle maturity = unweighted item mean. Order frequency = mean share of weeks with positive gross requirements; it measures replenishment touchpoints, not actual purchase-order counts. Demand variability = mean item population standard deviation / mean weekly gross requirements, including zero weeks. Cross-aircraft commonality = mean `(aircraft_count - 1) / (number_of_aircraft_types - 1)`. Exception frequency = constraint event count / (aircraft orders × horizon weeks); multiple component and capacity events per order-week may occur, so this is not a probability.
+
+The nine index dimensions are active items, variants, low-volume ratio, supplier fragmentation, **1 − maturity**, order frequency, demand variability, **1 − commonality**, exception frequency. `index = 100 × sum(weight × min(1, raw / scale))`. Default equal weights are 1/9; scales are 7, 4, 1, 1, 1, 1, 1, 1, 1. All directions mean greater modeled complexity. Scales are fixed across portfolios; index contributions are saved in `assumptions.json`. This mixes structural inputs and an execution outcome (exceptions), so the index is descriptive, not an independent causal predictor. Configurations reject negative/nonfinite costs, invalid scales and weights not summing to one.
+
+Override coefficients using `python -m aeroplan --portfolio-config policy.json`. JSON keys map to `PortfolioConfig`; when overriding weights/scales supply all nine keys. Example: `{"item_admin_cost": 1500, "holding_rate_per_week": 0.003}`. Configuration and seed are exported for replay. Scenario transformations are explicit in `masters`, not learned or secretly outcome-adjusted.
+
+### Cost of Complexity (illustrative USD)
+
+All fixed fees apply once over the modeled horizon, with no annualization. Item administration = active items × 1,200; supplier administration = distinct vendor groups × 2,400; exception handling = every logged constraint event × 35; lifecycle support = sum(1 − maturity) × 900. Holding cost = sum of weekly closing stock × synthetic item value × .002/week, using values 100,000/60,000/20,000 for airframe/engine/avionics. Conversion = removed items versus seven-item baseline × 8,000. Their sum is `cost_of_complexity`. These are scoped modeled costs, not all causally incremental costs of complexity. `total_modeled_cost` adds the existing engine's recovery cost exactly once. Recovery cost remains express/secondary allocation/resequencing cost; no procurement principal, lost-sales valuation, revenue, real quotes or total lifecycle cost is claimed. Separate breakdowns allow users to change or challenge each assumption.
+
+Average inventory = sum weekly closing component units / weeks (sum across items, not average per SKU). OTIF and backlog retain the existing unit-order definitions. Exceptions count repeat events, not unique delayed orders. Standardization proxy equals commonality. Flexibility proxy = retained active items / seven baseline items, representing variant choice only, not scheduling agility. Resilience proxy equals vendor diversification (1 − HHI), not tested outage resilience or an estimated probability. Global commonality can increase pooling while reducing vendor diversification. These opposing dimensions are reported separately; no weighted overall portfolio winner is asserted. `cost_rank` sorts ascending total modeled cost, with scenario-name tie break; service and proxies are excluded from that ranking.
+
+### Evidence and AI boundary
+
+Each portfolio exports master data, full IBP ledgers and invariant validation. `evidence.json` contains immutable comparison rows and index/cost audits with stable scenario-keyed evidence IDs and source digests. Python owns all indicators, costs and ranking. Existing SQL owns original IBP reporting. Portfolio calculations reuse Python rather than duplicate formulas in SQL. Existing `select_insights`/optional Ollama selector receives a deep copy and may return candidate IDs only. It cannot submit prose, numbers, KPI edits or ranking changes. Invalid schemas, unknown IDs, missing categories and offline adapter errors select deterministic fallback interpretations. All numbers are generated without a model; no live model is required or claimed in the default run.

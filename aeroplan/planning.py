@@ -62,7 +62,7 @@ def simulate(data, cfg, scenario=-1, reference=None):
             completed[o['order_id']] = week
         for c in stock:
             next_weeks = range(week+1, min(cfg.weeks, week+4)+1)
-            future = sum(bom[o['product']][c] for o in orders
+            future = sum(bom[o['product']].get(c, 0) for o in orders
                          if o['known_week'] <= week and o['due_week'] in next_weeks)
             denominator = min(4, cfg.weeks-week)
             avg = future / denominator if denominator else 0
@@ -96,3 +96,4 @@ def simulate(data, cfg, scenario=-1, reference=None):
                                if delivery is None or delivery > o['due_week'] else 0))
     return {'weekly': weekly, 'material': material, 'shipments': shipments, 'orders': deliveries,
             'exceptions': exceptions, 'capacity': snapshots}
+

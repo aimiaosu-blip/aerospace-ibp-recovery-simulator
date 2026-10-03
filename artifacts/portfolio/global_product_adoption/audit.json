@@ -1,0 +1,23 @@
+{
+  "cost_breakdown": {
+    "conversion": 32000,
+    "exception_handling": 11060,
+    "inventory_holding": 56280.0,
+    "item_administration": 3600,
+    "lifecycle_support": 0.0,
+    "supplier_administration": 7200
+  },
+  "index_contributions": {
+    "active_items": 0.0476190476,
+    "demand_variability": 0.0108027866,
+    "exception_frequency": 0.0028671494,
+    "lack_of_commonality": 0.0,
+    "lifecycle_immaturity": 0.0,
+    "low_volume_ratio": 0.0,
+    "order_frequency": 0.1111111111,
+    "supplier_fragmentation": 0.0456515775,
+    "variants": 0.0
+  },
+  "master_digest": "aa36ec9ef25f042e8f3e6534ef97e1170958f1c926e884ba06d4800f789f6eac",
+  "result_digest": "f1952adbc28b4d66ec70c6eebde2e89eb4e0d1ba7533bc0b1c1ada69ba3e8f15"
+}

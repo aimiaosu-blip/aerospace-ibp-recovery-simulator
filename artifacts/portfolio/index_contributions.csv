@@ -1,0 +1,37 @@
+portfolio_scenario,indicator,weighted_contribution
+Baseline,active_items,0.1111111111
+Baseline,variants,0.1111111111
+Baseline,low_volume_ratio,0.0476190476
+Baseline,supplier_fragmentation,0.0894924554
+Baseline,lifecycle_immaturity,0.0349206349
+Baseline,order_frequency,0.1111111111
+Baseline,demand_variability,0.0061583233
+Baseline,lack_of_commonality,0.0952380952
+Baseline,exception_frequency,0.0031030541
+Standardization,active_items,0.0793650794
+Standardization,variants,0.0555555556
+Standardization,low_volume_ratio,0.0222222222
+Standardization,supplier_fragmentation,0.0860082305
+Standardization,lifecycle_immaturity,0.0244444444
+Standardization,order_frequency,0.1111111111
+Standardization,demand_variability,0.0075516623
+Standardization,lack_of_commonality,0.0666666667
+Standardization,exception_frequency,0.001551527
+Consolidation,active_items,0.1111111111
+Consolidation,variants,0.1111111111
+Consolidation,low_volume_ratio,0.0476190476
+Consolidation,supplier_fragmentation,0.0724048879
+Consolidation,lifecycle_immaturity,0.0349206349
+Consolidation,order_frequency,0.1111111111
+Consolidation,demand_variability,0.0061583233
+Consolidation,lack_of_commonality,0.0952380952
+Consolidation,exception_frequency,0.0031030541
+Global Product Adoption,active_items,0.0476190476
+Global Product Adoption,variants,0.0
+Global Product Adoption,low_volume_ratio,0.0
+Global Product Adoption,supplier_fragmentation,0.0456515775
+Global Product Adoption,lifecycle_immaturity,0.0
+Global Product Adoption,order_frequency,0.1111111111
+Global Product Adoption,demand_variability,0.0108027866
+Global Product Adoption,lack_of_commonality,0.0
+Global Product Adoption,exception_frequency,0.0028671494

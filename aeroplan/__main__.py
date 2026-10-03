@@ -10,9 +10,10 @@ from .validation import validate_inputs, validate_result
 from .storage import store_tables, write_json, manifest
 from .reporting import report
 from .insights import write_insights, ollama_selector
+from .portfolio import run_portfolio, PortfolioConfig
 
 
-def run(output=Path('artifacts'), seed=42, selector=None):
+def run(output=Path('artifacts'), seed=42, selector=None, portfolio_policy=None):
     """Execute generation -> finite planning -> validation -> SQL -> decision reporting."""
     cfg = Config(seed=seed)
     data = generate(cfg)
@@ -55,6 +56,8 @@ def run(output=Path('artifacts'), seed=42, selector=None):
     manifest(out, asdict(cfg))
     report(out, metric_rows, ranking, root, profiles, cfg)
     insights = write_insights(out, tables, selector)
+    run_portfolio(data, cfg, out/'portfolio', selector, portfolio_policy)
+    manifest(out, asdict(cfg))
     return {'calculated_facts': 'Python/SQL', 'interpretation_mode': insights['mode'], 'output': str(out), 'recommended_scenario': ranking[0]['scenario'], 'validation': 'passed'}
 
 
@@ -63,9 +66,13 @@ def main():
     parser.add_argument('--output', type=Path, default=Path('artifacts'))
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--ollama-model', help='Optional installed local model; failure uses deterministic fallback')
+    parser.add_argument('--portfolio-config', type=Path, help='JSON PortfolioConfig overrides; synthetic assumptions')
     args = parser.parse_args()
-    print(run(args.output, args.seed, ollama_selector(args.ollama_model) if args.ollama_model else None))
+    import json
+    policy = PortfolioConfig(**json.loads(args.portfolio_config.read_text())) if args.portfolio_config else None
+    print(run(args.output, args.seed, ollama_selector(args.ollama_model) if args.ollama_model else None, policy))
 
 
 if __name__ == '__main__':
     main()
+

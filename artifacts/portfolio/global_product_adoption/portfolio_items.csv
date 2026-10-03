@@ -1,0 +1,4 @@
+component,family,active,lifecycle_maturity,aircraft_count,unit_value
+AIRFRAME,AIRFRAME,1,1.0,3,100000
+ENGINE,ENGINE,1,1.0,3,60000
+AVIONICS,AVIONICS,1,1.0,3,20000

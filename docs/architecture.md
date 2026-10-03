@@ -74,3 +74,12 @@ citation, compare all CSV hashes with/without a mutating adapter, exercise inval
 IDs/extra fields/duplicates/missing categories, and test the local HTTP contract
 with a mock. Offline CLI execution and an unavailable-model fallback are exercised.
 An actual installed model is optional; inference quality has not been evaluated.
+
+
+## Portfolio experiment extension
+
+`generate -> portfolio.masters (four alternative masters) -> validate_inputs -> simulate(reference) -> simulate(integrated recovery) -> validate_result -> indicators/costs -> comparison + evidence -> existing select_insights -> CSV/JSON/Markdown/HTML`.
+
+The original six-run IBP/SQL/AI pipeline remains intact. Portfolio scenarios are a separate dimension, not recovery-policy IDs: every portfolio fixes recovery policy 4. Sparse BOM support in planning, supply and validation makes aircraft-specific items executable. Source capacities and lead times remain enforced by the shared engine. Portfolio source facts and cost ranking are constructed before passing a deep copy to the existing AI selection adapter; responses never flow back into planning, costs or ranking. Default fallback works without network/model dependencies.
+
+`artifacts/portfolio/` contains scenario-specific master snapshots and detailed result ledgers, comparison exports, policy assumptions/index contributions/cost breakdowns, evidence IDs, AI selection metadata and an HTML trade-off report. The root manifest includes portfolio CSV hashes. `--portfolio-config` enables auditable coefficient/normalization overrides. Tests cover actual re-execution against saved ledgers, conservation, formulas, alternative seeds, reproducibility, evidence resolution and adversarial AI isolation. Everything is a synthetic independent portfolio project.

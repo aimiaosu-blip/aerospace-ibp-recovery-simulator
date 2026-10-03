@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "supplier_capacity",
+    "transport_capacity",
+    "lead_times",
+    "inventory_conservation",
+    "nonnegative_inventory",
+    "fal_capacity",
+    "unique_fulfillment",
+    "backlog_conservation",
+    "order_knowledge",
+    "frozen_history"
+  ],
+  "status": "passed"
+}

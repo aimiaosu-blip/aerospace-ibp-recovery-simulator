@@ -1,0 +1,7 @@
+supplier,component,weekly_capacity,manufacturing_weeks,secondary,qualified,vendor_group
+S-A1,AIRFRAME,20,3,0,1,S-A1
+S-A2,AIRFRAME,4,3,1,1,S-A2
+S-E1-AP-100,ENGINE-AP-100,28,4,0,1,S-E1-AP-100
+S-E1-AP-200,ENGINE-AP-200,11,4,0,1,S-E1-AP-200
+S-E1-AP-300,ENGINE-AP-300,5,4,0,1,S-E1-AP-300
+S-V1,AVIONICS,22,2,0,1,S-V1

@@ -50,7 +50,7 @@ def validate_result(result, data, cfg, reference=None):
         if order['delivery_week'] is not None:
             completion_hours[order['delivery_week']] += product_hours[order['product']]
             for c in {r['component'] for r in data['components']}:
-                actual_consumed[order['delivery_week'], c] += bom[order['product'], c]
+                actual_consumed[order['delivery_week'], c] += bom.get((order['product'], c), 0)
     last_stock = {r['component']: r['opening_units'] for r in data['inventory']}
     for r in result['material']:
         key = r['week'], r['component']
@@ -84,3 +84,4 @@ def validate_result(result, data, cfg, reference=None):
     return {'status': 'passed', 'checks': ['supplier_capacity', 'transport_capacity', 'lead_times',
             'inventory_conservation', 'nonnegative_inventory', 'fal_capacity', 'unique_fulfillment',
             'backlog_conservation', 'order_knowledge', 'frozen_history']}
+
