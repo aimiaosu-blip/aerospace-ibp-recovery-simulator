@@ -1,0 +1,56 @@
+{
+  "fallback_reason": "no_llm_requested",
+  "interpretations": [
+    {
+      "evidence_ids": [
+        "capacity_execution:0:16",
+        "production_plan:0:16:AP-100",
+        "production_plan:0:16:AP-200",
+        "production_plan:0:16:AP-300"
+      ],
+      "id": "demand_capacity:0:16",
+      "interpretation": "Due/backlog demand exceeds available assembly hours. Delivery pressure is present; this diagnostic does not mean the executed plan exceeds capacity.",
+      "kind": "demand_capacity"
+    },
+    {
+      "evidence_ids": [
+        "material_balance:0:14:AIRFRAME",
+        "order_fulfillment:0:X14-02",
+        "planning_exceptions:0:14:X14-02:material:AIRFRAME"
+      ],
+      "id": "material_shortage:0:14:AIRFRAME",
+      "interpretation": "Material availability blocks due orders during scheduling. Inspect linked order outcomes before assigning delivery impact; repeated weeks are not distinct orders.",
+      "kind": "material_shortage"
+    },
+    {
+      "evidence_ids": [
+        "material_balance:0:15:AIRFRAME",
+        "supply_shipments:0:S-A1:10:standard"
+      ],
+      "id": "supply_risk:0:S-A1:10:standard",
+      "interpretation": "Reduced source release capacity and downstream arrival-week inventory warrant joint review. Timing association alone does not establish the cause of every shortage.",
+      "kind": "supply_risk"
+    },
+    {
+      "evidence_ids": [
+        "material_balance:0:15:AVIONICS",
+        "material_balance:0:15:ENGINE",
+        "production_plan:0:15:AP-100"
+      ],
+      "id": "inventory_backlog:0:15:AP-100",
+      "interpretation": "Backlog coexists with remaining component inventory. Stock in one component cannot establish complete-kit availability; review material and assembly constraints before increasing buffers. Holding cost is not modeled.",
+      "kind": "inventory_backlog"
+    },
+    {
+      "evidence_ids": [
+        "scenario_evaluation:1",
+        "scenario_metrics:0"
+      ],
+      "id": "recovery_tradeoff:1",
+      "interpretation": "Compared with no action: OTIF higher; backlog exposure lower; ending backlog unchanged; recovery cost higher; risk proxy higher. The calculated ranking reflects policy weights, not an AI recommendation or proven optimum. Unpriced holding and delay effects are not lifecycle cost savings.",
+      "kind": "recovery_tradeoff"
+    }
+  ],
+  "mode": "deterministic_fallback",
+  "source_digest": "a5e2cdf3c8a100383216d98f37932d60e8a799702ead6f211b2edd0d7dbf02c4"
+}

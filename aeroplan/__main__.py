@@ -9,9 +9,10 @@ from .analysis import metrics, evaluate, root_causes, sensitivity
 from .validation import validate_inputs, validate_result
 from .storage import store_tables, write_json, manifest
 from .reporting import report
+from .insights import write_insights, ollama_selector
 
 
-def run(output=Path('artifacts'), seed=42):
+def run(output=Path('artifacts'), seed=42, selector=None):
     """Execute generation -> finite planning -> validation -> SQL -> decision reporting."""
     cfg = Config(seed=seed)
     data = generate(cfg)
@@ -53,15 +54,17 @@ def run(output=Path('artifacts'), seed=42):
     write_json(out/'sensitivity.json', profiles)
     manifest(out, asdict(cfg))
     report(out, metric_rows, ranking, root, profiles, cfg)
-    return {'output': str(out), 'recommended_scenario': ranking[0]['scenario'], 'validation': 'passed'}
+    insights = write_insights(out, tables, selector)
+    return {'calculated_facts': 'Python/SQL', 'interpretation_mode': insights['mode'], 'output': str(out), 'recommended_scenario': ranking[0]['scenario'], 'validation': 'passed'}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=Path('artifacts'))
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--ollama-model', help='Optional installed local model; failure uses deterministic fallback')
     args = parser.parse_args()
-    print(run(args.output, args.seed))
+    print(run(args.output, args.seed, ollama_selector(args.ollama_model) if args.ollama_model else None))
 
 
 if __name__ == '__main__':

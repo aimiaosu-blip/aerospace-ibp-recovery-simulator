@@ -183,3 +183,50 @@ aerospace-ibp-recovery-simulator/
 This project provides inspectable evidence of demand–supply balancing, ramp-up capacity planning, time-phased constraint analysis, order-level exception management, scenario governance and executive communication relevant to an aerospace IBP planning role. It is evidence of a synthetic portfolio implementation, **not employment experience, production SAP proficiency, or realized savings**.
 
 Conceptual references (documentation only, not data sources): [SAP supply planning](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/c1fb60cb1e9c49d99ada277ae57e9e6c/66a038fcf40f4f779c6b4696aede83a6.html) and [Microsoft Power BI star-schema guidance](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema).
+
+## Evidence-grounded AI-assisted analytics
+
+The IBP engine remains the quantitative source of truth. After Python/SQL planning,
+`aeroplan/insights.py` joins synthetic demand, capacity, material, shipment,
+order-exception and scenario records into a structured evidence package. It surfaces
+five exception categories: demand/capacity mismatch, material shortage, supply
+capacity risk, inventory/backlog coexistence, and recovery trade-offs.
+
+Run the normal CLI above; then inspect:
+
+- `artifacts/exception_evidence.json`: complete candidate explanations, calculated
+  source records, composite record IDs, CSV paths and a source SHA-256 digest.
+- [Planning interpretation brief](artifacts/ai_insights.md): interpretations shown
+  separately from calculated facts, with source IDs and CSV links.
+- [Machine-readable brief](artifacts/ai_insights.json): selected insights and the
+  actual mode/fallback reason. The HTML report links to both interpretation and evidence.
+
+**Default: deterministic fallback, no LLM inference.** Rule-authored synthesis is
+fully runnable offline with no keys or dependencies. It does not claim generative AI.
+An optional Ollama adapter lets an already installed local LLM select briefing
+priorities from validated candidates. It cannot author text, calculate KPI values,
+change scenario rankings or send planning commands. This deliberate restriction
+prevents fluent but unsupported conclusions; a valid citation alone would not do so.
+
+```bash
+# Optional: requires your own running Ollama and an already installed model.
+python3 -m aeroplan --ollama-model YOUR_INSTALLED_MODEL --output scratch/local-ai
+```
+
+The adapter sends only synthetic candidate evidence to `127.0.0.1:11434`, bypasses
+proxies, and times out after 30 seconds. It uses a bounded sample (first/middle/last
+candidate per category, up to four source records each); full evidence stays in the
+package. Only unique, known candidate IDs with complete category coverage are
+accepted. Unavailable model, malformed output, extra fields or invented IDs trigger
+an explicitly labeled fallback. Model output never replaces the factual records or
+rule-authored interpretations. A planner still makes the decision.
+
+This supports investigation of fragmented supply-chain information and potential
+hidden operational cost drivers. It **does not** estimate total lifecycle cost,
+inventory holding cost, delay penalties, realized savings or causal effects beyond
+the modeled experiment. See [architecture and trust boundary](docs/architecture.md).
+
+Validation includes exact evidence-to-SQL reconciliation, immutable input/KPI checks,
+adversarial model responses, adapter contract tests, offline fallback and seed
+sensitivity. Local-model success is tested with a mocked endpoint; actual model
+quality is not benchmarked and no live LLM run is claimed.
